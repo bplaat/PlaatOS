@@ -5,4 +5,4 @@ nasm -f bin kernel.asm -o kernel.bin
 cat kernel.bin >> plaatos.bin
 nasm -f bin hello.asm -o hello.bin
 cat hello.bin >> plaatos.bin
-qemu-system-i386 -fda plaatos.bin
+qemu-system-i386 -L "C:\Program Files\qemu" -fda plaatos.bin
